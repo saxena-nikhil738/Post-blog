@@ -7,7 +7,7 @@ import Connection from "./database/db.js";
 import router from "./routes/route.js";
 import path from 'path'
 import { dirname } from 'path';
-__dirname = path.resolve();
+const __dirname = path.resolve();
 dotenv.config();
 const app=express();
 
