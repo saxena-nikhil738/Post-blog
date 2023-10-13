@@ -6,6 +6,7 @@ import bodyParser from 'body-parser';
 import Connection from "./database/db.js";
 import router from "./routes/route.js";
 import path from 'path'
+import { dirname } from 'path';
 dotenv.config();
 const app=express();
 
