@@ -22,7 +22,7 @@ app.get('*', function(req, res){
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 })
 
-const PORT=8000;
+const PORT=process.env.PORT || 8000;
 app.listen(PORT,()=>console.log(`server is running succesfully on port ${PORT}`));
 const USERNAME=process.env.DB_USERNAME;
 const PASSWORD=process.env.DB_PASSWORD;
